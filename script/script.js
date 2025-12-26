@@ -96,7 +96,7 @@ const displayAllTrees=(allTrees)=>{
                     <h6 onclick="loadTreeDetail(${allTree.id})" class="text-[14px] font-semibold px-4 mb-2">${allTree.name}</h6>
                     <p class="text-[#1F2937] text-[12px] px-4 mb-3">${allTree.description}</p>
                     <div class="flex justify-between px-4 mb-3">
-                        <div class="bg-[#DCFCE7] text-[#15803D] w-[110px] h-[28px] text-[14px] flex justify-center items-center rounded-xl">${allTree.category}</div>
+                        <div class="bg-[#DCFCE7] text-[#15803D] w-[120px] h-[28px] text-[14px] flex justify-center items-center rounded-xl">${allTree.category}</div>
                         <p class="text-[14px] font-semibold"><i class="fa-solid fa-bangladeshi-taka-sign"></i>${allTree.price}</p>
                     </div>
                     <div class="px-4">
@@ -131,7 +131,7 @@ const displayAllTreesAfterClicking=(allTrees)=>{
                     <h6 onclick="loadTreeDetail(${allTree.id})" class="text-[14px] font-semibold px-4 mb-2">${allTree.name}</h6>
                     <p class="text-[#1F2937] text-[12px] px-4 mb-3">${allTree.description}</p>
                     <div class="flex justify-between px-4 mb-3">
-                        <div class="bg-[#DCFCE7] text-[#15803D] w-[110px] h-[28px] text-[14px] flex justify-center items-center rounded-xl">${allTree.category}</div>
+                        <div class="bg-[#DCFCE7] text-[#15803D] w-[120px] h-[28px] text-[14px] flex justify-center items-center rounded-xl">${allTree.category}</div>
                         <p class="text-[14px] font-semibold"><i class="fa-solid fa-bangladeshi-taka-sign"></i>${allTree.price}</p>
                     </div>
                     <div class="px-4">
@@ -161,7 +161,7 @@ const displayCategoryTrees=(categoryTrees)=>{
                     <h6 onclick="loadTreeDetail(${categoryTree.id})" class="text-[14px] font-semibold px-4 mb-2">${categoryTree.name}</h6>
                     <p class="text-[#1F2937] text-[12px] px-4 mb-3">${categoryTree.description}</p>
                     <div class="flex justify-between px-4 mb-3">
-                        <div class="bg-[#DCFCE7] text-[#15803D] w-[110px] h-[28px] text-[14px] flex justify-center items-center rounded-xl">${categoryTree.category}</div>
+                        <div class="bg-[#DCFCE7] text-[#15803D] w-[120px] h-[28px] text-[14px] flex justify-center items-center rounded-xl">${categoryTree.category}</div>
                         <p class="text-[14px] font-semibold"><i class="fa-solid fa-bangladeshi-taka-sign"></i>${categoryTree.price}</p>
                     </div>
                     <div class="px-4">
@@ -229,5 +229,5 @@ loadCategories()
 
 
 // loading all trees after opening this page
-// loadAllTrees()
+loadAllTrees()
 
