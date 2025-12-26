@@ -229,5 +229,5 @@ loadCategories()
 
 
 // loading all trees after opening this page
-loadAllTrees()
+// loadAllTrees()
 
