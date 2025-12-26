@@ -39,10 +39,11 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn w-[130px] h-[40px] rounded-3xl bg-[#FACC15] text-green-600">Plant a Tree</a>
+                <a class="btn w-[130px] h-[40px] rounded-3xl bg-[#FACC15] text-green-600 border-green-600">Plant a Tree</a>
             </div>
         </div>
     </section>
+
 
     <!-- banner section  -->
     <section class="bg-[#CFF0DC] block md:flex md:justify-between md:items-center">
@@ -59,8 +60,66 @@
         </div>
     </section>
 
-    
 
-    <script src="./script/index.js"></script>
+    <!-- body section  -->
+     <section class="bg-[#f0fdf4]">
+        <h2 class="text-center pt-[70px] pb-[40px] text-[30px] font-semibold">Choose Your Trees</h2>
+        <div class="flex justify-between">
+            <!-- categories navigation container -->
+            <div class="pl-[80px] flex flex-col justify-start  gap-2"> 
+                <h2 class="text-[20px] font-semibold">Categories</h2>
+                <button onclick="displayAllTreesAfterClicking(allTrees)" id="category-all-trees" class="w-[200px] h-[35px] rounded-sm pl-2 text-left text-black category-btn hover:bg-[#15803D] hover:text-white active">All Trees</button>
+                <div id="categories-container">
+                    
+                </div>
+            </div>
+
+            <!-- spiner section  -->
+            <section id="spinner" class="flex justify-center items-center py-10 hidden">
+                <span class="loading loading-dots loading-lg"></span>
+            </section> 
+
+            <!-- tree cards container -->
+            <div id="tree-cards" class="grid grid-cols-3 gap-5 pb-3">
+                
+            </div>
+
+            <!-- cart container -->
+            <div class="pr-[80px] pb-3">
+                <div class="w-[200px] h-full  bg-white rounded-sm">
+                    <h2 class="text-[20px] font-semibold p-2">Your Cart</h2>
+                    <div id="cart-container">
+                        
+                    </div>
+                    <hr class="w-[190px] mx-auto border border-[#1F2937]/10">
+                    <div class="flex justify-between p-2">
+                        <p class="text-[14px] font-semibold">Total</p>
+                        <p class="text-[14px] font-semibold"><i class="fa-solid fa-bangladeshi-taka-sign"></i><span id="totalPrice">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+    <!-- modal section  -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="tree_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="tree-details-container" class="space-y-2 p-2">
+                
+            </div>
+            <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+            </form>
+            </div>
+        </div>
+    </dialog> 
+
+
+
+    <script src="./script/script.js"></script>
 </body>
 </html>
